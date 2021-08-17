@@ -1,4 +1,3 @@
-<h1 align="center">
 <br>
   <div style="display: flex; align-items: center; justify-content: center;">
     <img style='padding: 8px;' src="https://appliancetheme.vtexassets.com/assets/app/src/vtex___751a9fb5b8e275bc4526ef358279243b.svg" alt="VTEX" width="200">
@@ -6,6 +5,7 @@
   </div>
 <br>
 <br>
+<h1 align="center">
 Desafio VTEX - Hiring Coders
 </h1>
 
