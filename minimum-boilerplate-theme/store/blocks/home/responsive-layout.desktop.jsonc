@@ -1,0 +1,40 @@
+{
+    "responsive-layout.desktop#desktop": {
+        "children": ["flex-layout.row#banner"]
+    },
+    "flex-layout.row#banner":{
+        "children":["flex-layout.col#banner"]
+    },
+    "flex-layout.col#banner":{
+        "children":["slider-layout"]
+    },
+    "slider-layout": {
+        "props": {
+        "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+        },
+        "infinite": true,
+        "showNavigationArrows": "always",
+        "blockClass": "carousel"
+        },
+        "children": ["image#banner1", "image#banner2"]
+    },
+    "image#banner1":{
+        "props":{
+            "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210818%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210818T025121Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=2d6bb79fbb7b8f2d78a44fbd7211d50f7f3f2a789575de8e08115a58bc288370",
+            "maxWidth": "100%",
+            "alt": "Wood Sport Festival",
+            "blockClass": "banner"
+        }
+    },
+    "image#banner2":{
+        "props":{
+            "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210818%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210818T025831Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=4b79ca4d24ff389de33a85ff138f7b8522cad8d346db2d823cd62eae96bc5c20",
+            "maxWidth": "100%",
+            "alt": "Grandes Guerreiros",
+            "blockClass": "banner"
+        }
+    }
+}
