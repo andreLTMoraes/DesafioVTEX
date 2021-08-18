@@ -13,9 +13,7 @@
     ]
   },
   "flex-layout.row#footer": { 
-    "children": [
-      "image"
-    ]
+
   },
   "image": {
     "props": {
