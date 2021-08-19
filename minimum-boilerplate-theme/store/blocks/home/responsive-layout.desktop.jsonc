@@ -1,14 +1,23 @@
 {
     "responsive-layout.desktop#desktop": {
-        "children": ["flex-layout.row#banner"]
+        "children": [
+            "flex-layout.row#banner",
+            "flex-layout.row#selector",
+            "flex-layout.row#products"
+        ]
     },
+    /***********************************************
+    *
+    *   BANNER TOPO DA HOME
+    *
+    ************************************************/
     "flex-layout.row#banner":{
         "children":["flex-layout.col#banner"]
     },
     "flex-layout.col#banner":{
-        "children":["slider-layout"]
+        "children":["slider-layout#banner"]
     },
-    "slider-layout": {
+    "slider-layout#banner": {
         "props": {
         "itemsPerPage": {
             "desktop": 1,
@@ -23,7 +32,7 @@
     },
     "image#banner1":{
         "props":{
-            "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210818%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210818T025121Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=2d6bb79fbb7b8f2d78a44fbd7211d50f7f3f2a789575de8e08115a58bc288370",
+            "src": "https://i.ibb.co/2M3hxkX/BANNER-WOOD.png",
             "maxWidth": "100%",
             "alt": "Wood Sport Festival",
             "blockClass": "banner"
@@ -31,10 +40,89 @@
     },
     "image#banner2":{
         "props":{
-            "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210818%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210818T025831Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=4b79ca4d24ff389de33a85ff138f7b8522cad8d346db2d823cd62eae96bc5c20",
+            "src": "https://i.ibb.co/F6FkXLf/Banner-Guerreiros.png",
             "maxWidth": "100%",
             "alt": "Grandes Guerreiros",
             "blockClass": "banner"
         }
+    },
+    /***********************************************
+    *
+    *   SELETOR
+    *
+    ************************************************/
+    "flex-layout.row#selector":{
+        "props":{
+            "blockClass":"selector-row"
+        },
+        "children":["rich-text"]
+    },
+    "rich-text":{
+        "props":{
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "você está vendo provas de ",
+            "textColor": "c-on-emphasis"
+        }
+    },
+    /***********************************************
+    *
+    *   PRODUTOS
+    *
+    ************************************************/
+    "flex-layout.row#products":{
+        "children":["flex-layout.col#products"]
+    },
+    "flex-layout.col#products":{
+        "children":["list-context.product-list#cat1"]
+    },
+    "list-context.product-list#cat1":{
+        "blocks":["product-summary.shelf"],
+        "children":["slider-layout#productpage"]
+    },
+    "product-summary.shelf": {
+        "children":[
+            "flex-layout.row#product-title-rating",
+            "product-summary-image",
+            "flex-layout.row#product-buy"
+        ]
+    },
+    "slider-layout#productpage":{
+        "props":{
+            "itemsPerPage":{
+                "desktop":2
+            }
+        }
+    },
+    "flex-layout.row#product-title-rating":{
+        "props":{
+            "blockClass":"product-card"
+        },
+        "children":["flex-layout.col#product-title","flex-layout.col#product-rating"]
+    },
+    "flex-layout.col#product-title":{
+        "props":{
+            "width":"70%"
+        },
+        "children":["product-summary-name"]
+    },
+    "flex-layout.col#product-rating":{
+        "children":["product-rating-inline"]
+    },
+    "flex-layout.row#product-buy":{
+        "props":{
+            "blockClass":"product-card"
+        },
+        "children":["flex-layout.col#product-price", "flex-layout.col#product-buy"]
+    },
+    "flex-layout.col#product-price":{
+        "props":{
+            "verticalAlign": "middle",
+            "width": "40%"
+        },
+        "children":["product-selling-price"]
+    },
+    "flex-layout.col#product-buy":{
+        "children":["product-summary-buy-button"]
     }
 }

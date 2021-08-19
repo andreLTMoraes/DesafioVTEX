@@ -1,0 +1,10 @@
+.flexRowContent--menu-bar {
+    background-color: #212121;
+}
+.flexRowContent--product-card {
+    background-color: #424242;
+}
+.flexRowContent--selector-row {
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+}
