@@ -2,3 +2,9 @@
     color: #59ff00;
     font-weight: 800;
 }
+.currencyContainer--product-price-search {
+    color: #59ff00;
+    padding-left: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}

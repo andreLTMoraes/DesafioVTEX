@@ -5,3 +5,6 @@
     color: #fff;
     bottom: -100px;
 }
+.sliderLayoutContainer--carousel {
+    background-color: transparent;
+}

@@ -1,10 +1,10 @@
 .imageElement--banner{
     border-radius: 2rem;
 }
-.container {
+/*.container {
     padding-left: 16rem;
     padding-right: 16rem;
-}
+}*/
 .carouselGaleryThumbs {
     display: none;
 }
