@@ -1,0 +1,60 @@
+{
+    "flex-layout.row#tabs":{
+        "props": {
+          "horizontalAlign": "left",
+          "verticalAlign": "center",
+          "preventHorizontalStretch": false,
+          "preventVerticalStretch": true,
+          "fullWidth": true,
+          "blockClass":"tab-bar"
+        },
+        "children": []
+    },
+    "tab-layout":{
+        "props":{
+            "blockClass":"tab-bar"
+        },
+        "children":[
+          "tab-list#cats",
+          "tab-content"
+        ]
+    },
+    "tab-list#cats":{
+        "children":[
+          "tab-list.item.children#cat1",
+          "tab-list.item.children#cat2"
+        ]
+    },
+    "tab-list.item.children#cat1":{
+        "props": {
+          "tabId": "cat1",
+          "blockClass": "tab-item"
+        },
+        "children":["rich-text#cat1"]
+    },
+    "rich-text#cat1":{
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Kit UpMedal",
+            "textColor": "c-on-base",
+            "font": "t-heading-5"
+        }
+    },
+    "tab-list.item.children#cat2":{
+        "props": {
+          "tabId": "cat2",
+          "blockClass": "tab-item"
+        },
+        "children":["rich-text#cat2"]
+    },
+    "rich-text#cat2":{
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "UpMedal",
+            "textColor": "c-on-base",
+            "font": "t-heading-5"
+        }
+    }
+}

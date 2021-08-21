@@ -5,6 +5,11 @@
   "header.full": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
+  /**********************************************
+  *
+  * HEADER DESKTOP
+  *
+  ***********************************************/
   "header-layout.desktop": {
     "children": [
       "sticky-layout#desktop"
@@ -16,13 +21,19 @@
     },
     "children": ["flex-layout.row#desktop"]
   },
+  /**********************************************
+  *
+  * BARRA PRINCIPAL DESKTOP
+  *
+  ***********************************************/
   "flex-layout.row#desktop": {
     "props": {
       "horizontalAlign": "left",
       "verticalAlign": "center",
       "preventHorizontalStretch": false,
       "preventVerticalStretch": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass":"menu-bar"
     },
     "children": [
       "flex-layout.col#logo-desktop",
@@ -54,12 +65,22 @@
       "width": "150"
     }
   },
+  /**********************************************
+  *
+  * HEADER MOBILE
+  *
+  ***********************************************/
   "header-layout.mobile": {
     "children": ["sticky-layout#mobile"]
   },
   "sticky-layout#mobile": {
     "children": ["flex-layout.row#mobile"]
   },
+  /**********************************************
+  *
+  * BARRA PRINCIPAL MOBILE
+  *
+  ***********************************************/
   "flex-layout.row#mobile": {
     "children": [
       "drawer",

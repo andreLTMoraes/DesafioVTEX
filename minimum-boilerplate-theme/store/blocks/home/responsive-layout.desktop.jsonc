@@ -1,10 +1,18 @@
 {
     "responsive-layout.desktop#desktop": {
         "children": [
+            "sticky-layout#tabs",
             "flex-layout.row#banner",
             "flex-layout.row#selector",
             "flex-layout.row#products"
         ]
+    },
+    "sticky-layout#tabs":{
+        "props":{
+            "position": "top",
+            "blockClass": "tabs"
+        },
+        "children":["flex-layout.row#tabs"]
     },
     /***********************************************
     *
@@ -74,20 +82,47 @@
         "children":["flex-layout.col#products"]
     },
     "flex-layout.col#products":{
+        "children":["tab-content#cats"]
+    },
+    "tab-content#cats":{
+        "children":[
+            "tab-content.item#cat1",
+            "tab-content.item#cat2"]
+    },
+    "tab-content.item#cat1": {
+        "props":{
+            "tabId": "cat1"
+        },
         "children":["list-context.product-list#cat1"]
     },
-    "list-context.product-list#cat1":{
-        "blocks":["product-summary.shelf"],
-        "children":["slider-layout#productpage"]
+    "tab-content.item#cat2": {
+        "props":{
+            "tabId": "cat2"
+        },
+        "children":["list-context.product-list#cat2"]
     },
-    "product-summary.shelf": {
+    "list-context.product-list#cat1":{
+        "blocks":["product-summary.shelf#home"],
+        "props":{
+            "category": "20"
+        },
+        "children":["slider-layout#product-page"]
+    },
+    "list-context.product-list#cat2":{
+        "blocks":["product-summary.shelf#home"],
+        "props":{
+            "category": "28"
+        },
+        "children":["slider-layout#product-page"]
+    },
+    "product-summary.shelf#home": {
         "children":[
             "flex-layout.row#product-title-rating",
             "product-summary-image",
             "flex-layout.row#product-buy"
         ]
     },
-    "slider-layout#productpage":{
+    "slider-layout#product-page":{
         "props":{
             "itemsPerPage":{
                 "desktop":2

@@ -5,3 +5,11 @@
     padding-left: 16rem;
     padding-right: 16rem;
 }
+.carouselGaleryThumbs {
+    display: none;
+}
+.productBrand {
+    color: #fff;
+    font-size: larger;
+    font-weight: 700;
+}

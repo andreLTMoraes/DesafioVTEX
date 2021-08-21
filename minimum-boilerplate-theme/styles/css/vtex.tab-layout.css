@@ -1,0 +1,13 @@
+.container--tab-bar {
+    display: flex;
+    background-color: #212121;
+}
+.listItemActive {
+    background-color: transparent;
+}
+.listItemChildren{
+    color: #fff;
+}
+.listItemChildrenActive {
+    border-bottom: #59ff00 solid 2px;
+}

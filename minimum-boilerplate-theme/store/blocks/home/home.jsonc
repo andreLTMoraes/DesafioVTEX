@@ -1,6 +1,7 @@
 {
   "store.home": { 
     "blocks": [
+      "tab-layout",
       "responsive-layout.desktop#desktop"
     ]
   }
