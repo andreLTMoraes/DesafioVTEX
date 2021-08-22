@@ -1,1 +1,6 @@
 .DS_Store
+
+
+store-block-template/node_modules/
+store-block-template/node/node_modules/
+store-block-template/react/node_modules/
