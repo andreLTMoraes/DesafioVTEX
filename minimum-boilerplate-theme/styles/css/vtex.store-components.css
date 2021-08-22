@@ -5,6 +5,9 @@
     padding-left: 16rem;
     padding-right: 16rem;
 }*/
+.carouselContainer {
+    margin-top: 2rem;
+}
 .carouselGaleryThumbs {
     display: none;
 }
@@ -12,4 +15,16 @@
     color: #fff;
     font-size: larger;
     font-weight: 700;
+}
+.productImagesGallerySlide {
+    width: 610px;
+}
+.carouselGaleryCursor {
+    width: 610px;
+}
+.productDescriptionText{
+    color: #fff;
+}
+.productDescriptionTitle{
+    color: #59ff00;
 }

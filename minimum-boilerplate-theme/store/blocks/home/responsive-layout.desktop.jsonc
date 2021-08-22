@@ -92,7 +92,8 @@
                 "skuFilter": "FIRST_AVAILABLE",
                 "simulationBehavior": "skip",
                 "maxItemPerPage": 8
-            }
+            },
+            "blockClass":"product-list"
         }
     },
     "search-result-layout.desktop#home": {

@@ -1,8 +1,15 @@
 {
     "flex-layout.row#product-detail":{
+        "props":{
+            "horizontalAlign":"center"
+          },
         "children":["flex-layout.col#card"]
     },
     "flex-layout.col#card": {
+        "props":{
+            "width":"70%",
+            "blockClass": "description"
+          },
         "children": ["product-description"]
     }
 }

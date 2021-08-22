@@ -4,7 +4,7 @@
   },
   "footer-layout.desktop": { 
     "children": [
-      "flex-layout.row#footer"
+      "sticky-layout#desktop-footer"
     ]
   },
   "footer-layout.mobile": { 
@@ -12,13 +12,112 @@
       "flex-layout.row#footer"
     ]
   },
-  "flex-layout.row#footer": { 
-
-  },
-  "image": {
+  "sticky-layout#desktop-footer": {
     "props": {
-      "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+      "blockClass": "sticky-footer"
+    },
+    "children": [
+      "flex-layout.row#footer"
+    ]
+  },
+  "flex-layout.row#footer": { 
+    "props":{
+      "horizontalAlign":"center"
+    },
+    "children":[
+      "flex-layout.col#entrar",
+      "flex-layout.col#desafios",
+      "flex-layout.col#loja",
+      "flex-layout.col#suporte"
+    ]
+  },
+  "flex-layout.col#entrar":{
+    "props":{
+      "width":"10%",
+      "blockClass":"footer-col"
+    },
+    "children":["image#entrar", "rich-text#entrar"]
+  },
+  "image#entrar": {
+    "props": {
+      "src": "https://i.ibb.co/gDjXPCW/user-icon.png",
+      "maxHeight": 24
+    }
+  },
+  "rich-text#entrar":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "*ENTRAR*",
+      "textColor": "c-on-base",
+      "font": "t-heading-6"
+    }
+  },
+  "flex-layout.col#desafios":{
+    "props":{
+      "width":"10%",
+      "blockClass":"footer-col"
+    },
+    "children":["image#desafios", "rich-text#desafios"]
+  },
+  "image#desafios": {
+    "props": {
+      "src": "https://i.ibb.co/f93MPzw/trophy-icon.png",
+      "maxHeight": 24
+    }
+  },
+  "rich-text#desafios":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "*DESAFIOS*",
+      "textColor": "c-on-base",
+      "font": "t-heading-6"
+    }
+  },
+  "flex-layout.col#loja":{
+    "props":{
+      "width":"10%",
+      "blockClass":"footer-col"
+    },
+    "children":["image#loja", "rich-text#loja"]
+  },
+  "image#loja": {
+    "props": {
+      "src": "https://i.ibb.co/mGfS7f7/shop-icon.png",
+      "maxHeight": 24
+    }
+  },
+  "rich-text#loja":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "*LOJA*",
+      "textColor": "c-on-base",
+      "font": "t-heading-6"
+    }
+  },
+  "flex-layout.col#suporte":{
+    "props":{
+      "width":"10%",
+      "blockClass":"footer-col"
+    },
+    "children":["image#suporte", "rich-text#suporte"]
+  },
+  "image#suporte": {
+    "props": {
+      "src": "https://i.ibb.co/vk7b1LP/wp-icon.png",
+      "maxHeight": 24
+    }
+  },
+  "rich-text#suporte":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[*SUPORTE*](https://api.whatsapp.com/send?phone=5581997358814&text=Vim%20pelo%20site%20do%20desafio%20vtex%20do%20hiring%20coders%20%232)",
+      "textColor": "c-on-base",
+      "font": "t-heading-6",
+      "blockClass": "help-message"
     }
   }
 }
