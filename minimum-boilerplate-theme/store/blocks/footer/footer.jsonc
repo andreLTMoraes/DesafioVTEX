@@ -7,11 +7,6 @@
       "sticky-layout#desktop-footer"
     ]
   },
-  "footer-layout.mobile": { 
-    "children": [
-      "flex-layout.row#footer"
-    ]
-  },
   "sticky-layout#desktop-footer": {
     "props": {
       "blockClass": "sticky-footer"

@@ -1,8 +1,8 @@
 {
   "store.home": { 
     "blocks": [
-      "tab-layout",
-      "responsive-layout.desktop#desktop"
+      "responsive-layout.desktop#desktop",
+      "responsive-layout.mobile#mobile"
     ]
   }
 }

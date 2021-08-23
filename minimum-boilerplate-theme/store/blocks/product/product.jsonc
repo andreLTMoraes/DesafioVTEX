@@ -12,15 +12,15 @@
     "props":{
       "horizontalAlign":"center"
     },
-    "children":["flex-layout.col#content-image"]
+    "children":["flex-layout.col#content-image-desktop"]
   },
-  "flex-layout.col#content-image":{
+  "flex-layout.col#content-image-desktop":{
     "props":{
       "width":"70%"
     },
-    "children":["product-images"]
+    "children":["product-images#desktop"]
   },
-  "product-images":{
+  "product-images#desktop":{
     "props":{
       "position": "right",
       "maxHeight": 400

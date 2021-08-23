@@ -1,15 +1,4 @@
 {
-    "flex-layout.row#tabs":{
-        "props": {
-          "horizontalAlign": "left",
-          "verticalAlign": "center",
-          "preventHorizontalStretch": false,
-          "preventVerticalStretch": true,
-          "fullWidth": true,
-          "blockClass":"tab-bar"
-        },
-        "children": []
-    },
     "tab-layout":{
         "props":{
             "blockClass":"tab-bar"

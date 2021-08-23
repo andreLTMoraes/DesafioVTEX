@@ -86,7 +86,6 @@
       "drawer",
       "logo",
       "flex-layout.col#spacer",
-      "login",
       "minicart.v2"
     ],
     "props": {
@@ -97,6 +96,6 @@
     }
   },
   "drawer": {
-    "children": []
+    "children": ["tab-layout"]
   }
 }

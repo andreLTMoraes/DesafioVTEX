@@ -1,7 +1,6 @@
 {
-    "responsive-layout.desktop#desktop": {
+    "responsive-layout.mobile#mobile": {
         "children": [
-            "tab-layout",
             "flex-layout.row#banner",
             "flex-layout.row#selector",
             "search-result-layout.customQuery#home"
@@ -12,19 +11,19 @@
     *   BANNER TOPO DA HOME
     *
     ************************************************/
-    "flex-layout.row#banner":{
+    "flex-layout.row#banner-mobile":{
         "props":{
             "horizontalAlign":"center"
         },
-        "children":["flex-layout.col#banner"]
+        "children":["flex-layout.col#banner-mobile"]
     },
-    "flex-layout.col#banner":{
+    "flex-layout.col#banner-mobile":{
         "props":{
             "width":"70%"
         },
-        "children":["slider-layout#banner"]
+        "children":["slider-layout#banner-mobile"]
     },
-    "slider-layout#banner": {
+    "slider-layout#banner-mobile": {
         "props": {
         "itemsPerPage": {
             "desktop": 1,
@@ -35,9 +34,9 @@
         "showNavigationArrows": "always",
         "blockClass": "carousel"
         },
-        "children": ["image#banner1", "image#banner2"]
+        "children": ["image#banner1-mobile", "image#banner2-mobile"]
     },
-    "image#banner1":{
+    "image#banner1-mobile":{
         "props":{
             "src": "https://i.ibb.co/2M3hxkX/BANNER-WOOD.png",
             "maxWidth": "100%",
@@ -45,7 +44,7 @@
             "blockClass": "banner"
         }
     },
-    "image#banner2":{
+    "image#banner2-mobile":{
         "props":{
             "src": "https://i.ibb.co/F6FkXLf/Banner-Guerreiros.png",
             "maxWidth": "100%",
@@ -58,13 +57,13 @@
     *   SELETOR
     *
     ************************************************/
-    "flex-layout.row#selector":{
+    "flex-layout.row#selector-mobile":{
         "props":{
             "blockClass":"selector-row"
         },
-        "children":["rich-text"]
+        "children":["rich-text#mobile"]
     },
-    "rich-text":{
+    "rich-text#mobile":{
         "props":{
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
@@ -77,8 +76,8 @@
     *   PRODUTOS
     *
     ************************************************/
-    "search-result-layout.customQuery#home":{
-        "blocks":["search-result-layout.desktop#home"],
+    "search-result-layout.customQuery#home-mobile":{
+        "blocks":["search-result-layout.desktop#home-mobile"],
         "props":{
             "querySchema":{
                 "skuFilter": "FIRST_AVAILABLE",
@@ -88,16 +87,16 @@
             "blockClass":"product-list"
         }
     },
-    "search-result-layout.desktop#home": {
-        "children":["search-content#home"],
+    "search-result-layout.desktop#home-mobile": {
+        "children":["search-content#home-mobile"],
         "props":{
             "preventRouteChange": true
         }
     },
-    "search-content#home":{
-        "blocks":["gallery#home", "not-found"]
+    "search-content#home-mobile":{
+        "blocks":["gallery#home-mobile", "not-found"]
     },
-    "gallery#home": {
+    "gallery#home-mobile": {
         "props": {
             "layouts":[
                 {
