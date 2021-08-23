@@ -10,7 +10,7 @@ interface TitleProps {
 
 const Title: StorefrontFunctionComponent<TitleProps> = ({title}) => {
     const handles = useCssHandles(CSS_HANDLES)
-    const titleText = title || <FormattedMessage id="countdown.title" />
+    const titleText = title || <FormattedMessage id="leadform.title" />
 
     return(
         <div className={`${handles.container} t-heading-2 fw3 w-100 c-muted-1 bd tc`}>
@@ -20,12 +20,12 @@ const Title: StorefrontFunctionComponent<TitleProps> = ({title}) => {
 }
 
 Title.schema = {
-    title: 'editor.countdown-title.title',
-    description: 'editor.countdown-title.description',
+    title: 'editor.leadform-title.title',
+    description: 'editor.leadform-title.description',
     type: 'object',
     properties: {
         title: {
-            title: "editor.countdown.title.title",
+            title: "editor.leadform.title.title",
             type: "string",
             default: null,
         }

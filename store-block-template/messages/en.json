@@ -1,5 +1,9 @@
 {
-  "editor.countdown.title": "Countdown",
-  "editor.countdown.description": "Countdown component",
-  "countdown.title": "Countdown"
+  "editor.leadform.title": "Leads",
+  "editor.leadform.description": "Leads component",
+  "leadform.title": "Don't miss anything!",
+  "leadform.cta": "Fill out the form and don't miss any more evidence! Run, it's quick.",
+  "leadform.phname": "Your name",
+  "leadform.phemail": "Your best email",
+  "leadform.phphone": "Your phone"
 }

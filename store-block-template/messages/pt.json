@@ -1,5 +1,9 @@
 {
-  "editor.countdown.title": "Contagem regressiva",
-  "editor.countdown.description": "Componente de contagem regressiva",
-  "countdown.title": "Contagem regressiva"
+  "editor.leadform.title": "Leads",
+  "editor.leadform.description": "Componente de leads",
+  "leadform.title": "Não perca nada!",
+  "leadform.cta": "Preencha o formulário e não perca mais nenhuma prova! Corre, é rapidinho!",
+  "leadform.phname": "Seu nome",
+  "leadform.phemail": "Seu melhor email",
+  "leadform.phphone": "Seu telefone"
 }

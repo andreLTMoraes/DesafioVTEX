@@ -12,7 +12,10 @@
     ],
     "module": "esnext",
     "moduleResolution": "node",
-    "target": "es2015"
+    "target": "es2015",
+    "lib":[
+      "dom"
+    ]
   },
   "include": [
     "./typings/*.d.ts",

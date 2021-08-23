@@ -1,9 +1,9 @@
 {
   "vendor": "hiringcoders2021",
-  "name": "my-countdown",
+  "name": "leadform-andremoraes",
   "version": "0.0.1",
-  "title": "Countdown",
-  "description": "Countdown component",
+  "title": "LeadForm",
+  "description": "Lead Form component",
   "defaultLocale": "pt-BR",
   "builders": {
     "messages": "1.x",

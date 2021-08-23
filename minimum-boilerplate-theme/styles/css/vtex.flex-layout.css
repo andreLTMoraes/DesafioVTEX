@@ -16,6 +16,9 @@
     background-color: #424242;
     padding: 2rem;
 }
+.flexRow--buy-row {
+    margin: 2rem 0;
+}
 /* Footer */
 .flexColChild--footer-col {
     display: flex;
